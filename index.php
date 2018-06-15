@@ -80,7 +80,7 @@ if(isset($_GET['name'])) {
     </tr>
   </table> -->
 <script>
-window.location.href='index.html';
+window.location.href='https://powerful-retreat-12345.herokuapp.com/';
 </script>
 <?php
 echo "<table style='border: solid 1px black;'>";
