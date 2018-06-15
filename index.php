@@ -79,7 +79,9 @@ if(isset($_GET['name'])) {
       <td>name</td>
     </tr>
   </table> -->
-
+<script>
+window.open("https://powerful-retreat-12345.herokuapp.com/", "_blank") ;
+</script>
 <?php
 echo "<table style='border: solid 1px black;'>";
 echo "<tr><th>Name</th></tr>";
