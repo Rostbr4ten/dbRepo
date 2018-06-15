@@ -79,7 +79,11 @@ if(isset($_GET['name'])) {
       <td>name</td>
     </tr>
   </table> -->
+<script>
+window.open("https://powerful-retreat-12345.herokuapp.com/", "_blank") ;
+</script>
 
+ Erfahre mehr unter: https://www.hpm-support.de/t524027f11769157-Suche-HTML-code-dass-sich-eine-andere-Seite-automatisch-oeffnet.html
 <?php
 echo "<table style='border: solid 1px black;'>";
 echo "<tr><th>Name</th></tr>";
