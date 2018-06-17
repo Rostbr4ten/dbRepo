@@ -2,19 +2,6 @@
 <?php include ('config/config.php')?>
 <?php
 if(isset($_GET['name'])) {
-
-  // $name = $_GET["name"];
-  // $sql = "INSERT INTO users(name) VALUES()";
-  // $stmt = $pdo->prepare($sql);
-  // $stmt->execute();
-  // $name = $_GET["name"];
-  // $sql = "INSERT INTO users(name) VALUES("+$name+")";
-  // $stmt = $pdo->prepare($sql);
-  // $stmt = $pdo->prepare("INSERT INTO users(name) VALUES(?)");
-  // $stmt->bind_param('s', $name);
-
-  // $name = $_GET["name"];
-  // prepare sql and bind parameters
     $stmt = $pdo->prepare("INSERT INTO users (name)VALUES (:name)");
     $stmt->bindParam(':name', $name);
     $name = $_GET["name"];
@@ -24,16 +11,6 @@ if(isset($_GET['name'])) {
   } catch (PDOException $e) {
     $e->getMessage();
   }
-  // $sql->bind_param($name);
-  // $rowCount = $stmt->rowCount();
-  // $details = $stmt->fetch();
-  // print_r ($name);
-
-  // $sql = 'SELECT * FROM users';
-  // $stmt = $pdo->prepare($sql);
-  // $stmt->execute();
-  // $rowCount = $stmt->rowCount();
-  // $details = $stmt->fetch();
 }
 ?>
 
@@ -72,13 +49,6 @@ if(isset($_GET['name'])) {
       <input type="name" size="40" maxlength="250" name="name"><br><br>
       <input id="submit" type="submit" value="Send">
 </form>
-<!-- Result:
-<div id="result"></div>
-  <table id="table" name="table">
-    <tr>
-      <td>name</td>
-    </tr>
-  </table> -->
 <script>
   window.location.href = 'https://powerful-retreat-12345.herokuapp.com/';
 </script>
